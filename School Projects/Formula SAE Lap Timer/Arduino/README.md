@@ -1,0 +1,3 @@
+# Formula SAE Lap Timer Arduino
+
+Here is the Arduino sketch for the transceiver Arduinos. The sketch is the same for both types of receivers, except a couple values in the files need to be set before flashing it to the Arduino. The `cone` value at the top of the file is set to true if the transceiver is a transmitter, since it connects to an IR sensor embedded in a traffic cone. It should be set to false if it is the receiver Arduino that connects to the laptop. The `transceiverID` value should be 0 for the receiver, and either 1 or 2 for the two transmitters. These IDs are simply to discern between which IR sensor was tripped. The actual orientation of the transmitters doesn't really matter. 
