@@ -1,0 +1,71 @@
+06:59:49pm: Receiver connected
+06:59:50pm: T: 0, From 1
+06:59:53pm: T: 0, From 1
+06:59:56pm: T: 0, From 1
+06:59:59pm: T: 0, From 1
+07:00:02pm: T: 0, From 1
+07:00:05pm: T: 1, From 1
+07:00:08pm: T: 1, From 1
+07:00:11pm: T: 0, From 1
+07:00:14pm: T: 0, From 1
+07:00:17pm: T: 0, From 1
+07:00:21pm: Receiver disconnected
+07:00:27pm: Receiver disconnected
+07:06:47pm: Receiver connected
+07:06:56pm: T: 0, From 1
+07:07:06pm: T: 0, From 2
+07:07:15pm: T: 0, From 2
+07:07:21pm: T: 0, From 2
+07:07:32pm: T: 1, From 1
+07:07:43pm: T: 0, From 2
+07:07:48pm: Requesting 1
+07:07:48pm: 0
+07:07:48pm: T: 16829, From 1
+07:07:50pm: Requesting 2
+07:07:50pm: 1
+07:07:52pm: Requesting 2
+07:07:52pm: 1
+07:07:52pm: T: 9509, From 2
+07:08:18pm: T: 0, From 1
+07:08:22pm: T: 0, From 1
+07:08:26pm: T: 0, From 1
+07:08:30pm: T: 1, From 1
+07:08:34pm: T: 1, From 1
+07:08:37pm: T: 0, From 1
+07:08:46pm: T: 1, From 1
+07:08:50pm: T: 0, From 1
+07:09:43pm: Receiver disconnected
+07:25:21pm: Receiver connected
+07:25:36pm: T: 0, From 2
+07:25:52pm: Requesting 1
+07:25:52pm: 1
+07:25:53pm: T: 80010, From 1
+07:25:55pm: Requesting 1
+07:25:55pm: 1
+07:25:55pm: T: 82097, From 1
+07:25:56pm: Requesting 2
+07:25:56pm: 1
+07:25:56pm: T: 10337, From 2
+07:26:22pm: T: 0, From 2
+07:26:25pm: Requesting 2
+07:26:25pm: 1
+07:26:25pm: T: 3463, From 2
+07:26:27pm: Requesting 2
+07:26:27pm: 1
+07:26:27pm: T: 5615, From 2
+07:26:29pm: Requesting 2
+07:26:29pm: 1
+07:26:29pm: T: 7713, From 2
+07:26:31pm: Requesting 2
+07:26:31pm: 1
+07:26:31pm: T: 9674, From 2
+07:26:39pm: Requesting 2
+07:26:39pm: 1
+07:26:40pm: T: 3829, From 2
+07:26:44pm: T: 0, From 2
+07:26:51pm: T: 1, From 2
+07:26:55pm: T: 0, From 2
+07:26:58pm: T: 0, From 2
+07:27:02pm: T: 0, From 2
+07:27:06pm: T: 1, From 2
+07:28:18pm: Receiver disconnected
