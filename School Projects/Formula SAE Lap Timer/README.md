@@ -1,6 +1,6 @@
 # Formula SAE Lap Timer
 
-This is the lap timer I designed for my school's Formula SAE racing team.
+This is the lap timer I designed for my school's Formula SAE racing team in the Spring 2021 semester.
 
 ## Purpose
 
