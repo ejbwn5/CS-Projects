@@ -6,7 +6,7 @@ I also included a custom data type `BigInt` for the purpose of storing very larg
 
 I included an example image showing some test cases.
 
-![Example Image](Example.png?raw=true "Example Image")
+![Example Image](Example.PNG?raw=true "Example Image")
 
 The reason I did this project was because I wanted to freshen up my dynamic programming skills, so I decided to try solving a problem that could be memoized.
 
