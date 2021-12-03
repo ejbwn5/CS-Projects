@@ -1,5 +1,6 @@
-// Lexical Analyzer Using Flex
-
+/* 
+ * Lexical Analyzer Using Flex
+*/
 %{
 
 %}
