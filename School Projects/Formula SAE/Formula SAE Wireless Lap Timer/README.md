@@ -1,4 +1,4 @@
-# Formula SAE Lap Timer
+# Formula SAE Wireless Lap Timer
 
 This is the lap timer I designed for my school's Formula SAE racing team in the Spring 2021 semester.
 
