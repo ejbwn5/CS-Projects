@@ -14,3 +14,7 @@ However, I'm still including the **EdputerCPU.bin** file for completeness, since
 ## Execution
 
 To use this, you need the **EdputerEmulator.exe**, **SDL2.dll**, and the **Code.bin** and **Arg.bin** files in the same directory.
+
+Since not everyone has Visual Studio, I included a precompiled executable in the x64/Release folder.
+
+Also, for some reason, SDL2 runs faster when you first open it. This means that if you click and hold the mouse button in the window, then move the mouse off screen and release, the SDL2 window will run faster. This is truly a strange effect, but I find it very useful since the emulator is ususally fairly slow, and this speed boost makes it run a lot faster.
