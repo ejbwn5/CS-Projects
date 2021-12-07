@@ -19,7 +19,7 @@ infile.close()
 
 
 startaddress=100 #default is RAM loc 100 is the starting point for variables
-if len(sys.argv)==5:
+if len(sys.argv)>=5:
   startaddress=int(sys.argv[4]) #unless specified otherwise in the command line
 
 
