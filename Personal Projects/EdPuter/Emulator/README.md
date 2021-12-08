@@ -8,7 +8,7 @@ This emulator runs Edputer programs which are stored in the form of **Code.bin**
 
 This emulator used to use the **EdputerCPU.bin** file to properly simulate the instruction decoding for every instruction, including subclock simulation, but it had incredibly poor performance, as emulators often do. I have since reworked the emulator to use a more optimized approach where it simply calculates the equivalent operation based on the opcode for each instruction. 
 
-However, I'm still including the **EdputerCPU.bin** file for completeness, since it's needed for the real physical Edputer. 
+However, I'm still including the **EdputerCPU.bin** file for completeness, since it's needed for the real physical Edputer. It can be found in the [Instruction Set](../Instruction%20Set/) folder.
 
 
 ## Execution
