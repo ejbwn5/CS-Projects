@@ -6,6 +6,8 @@ A green cell indicates that the specified control bit is unset, and a red cell i
 
 All instructions begin with the same 2 steps called the fetch cycle, which is shown at the top of the chart. This is where the computer uses the program counter register to fetch the next instruction from code memory and load it into the instruction register.
 
+A description of all the instructions can be found in the [Instruction Descriptions](Instruction%20Descriptions/) folder.
+
 ## CPU files
 
 The **EdputerCPU.bin** file shows the 24 bit control word needed for each given instruction input. To be specific, the mapping of the input bits to the instruction decoding EEPROMS is as follows:
