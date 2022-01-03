@@ -18,3 +18,7 @@ To use this, you need the **EdputerEmulator.exe**, **SDL2.dll**, and the **Code.
 Since not everyone has Visual Studio, I included a precompiled executable in the x64/Release folder.
 
 Also, for some reason SDL2 runs faster when you first give it focus. This means that if you click and hold the mouse button in the window, then move the mouse off screen and release, the SDL2 window will run faster. This is a pretty strange effect, but I actually find it very useful since the emulator is usually fairly slow, and this speed boost makes it run a lot faster.
+
+# New Emulator
+
+I've actually been experimenting with making a new emulator for Edputer. I'm not satisfied with the performance my current one has, so I've been trying to develop one meant to run on straight x86 machine code, compiled using ASM and C. It hasn't been finished yet, and I don't have enough worthwhile code to upload on this portfolio yet, but it is my current plan for the next addition to Edputer.
