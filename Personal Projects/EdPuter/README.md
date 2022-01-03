@@ -9,7 +9,7 @@ There are currently 80 instructions in the instruction set, but there is space f
 ## Components
 
 - [Hardware](Hardware/) - Schematics for the computer board and VGA card
-- [Compiler ](Compiler/) - A compiler for a C-like language I designed for Edputer
+- [Compiler](Compiler/) - A compiler for a C-like language I designed for Edputer
 - [Assembler](Assembler/) - An assembler to convert Assembly code into a raw binary form that Edputer can actually execute
 - [Emulator](Emulator/) - An emulator written in C++ using the SDL library to simulate Edputer on a Windows machine. I have also been experimenting recently on a new Emulator written in x86 ASM and C to run on bare metal
 - [Instruction Set](Instruction%20Set/) - Description of the computer's set of instructions, and an explanation of the instruction set itself
