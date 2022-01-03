@@ -6,6 +6,8 @@ I wanted this computer to be as simple as possible and be made primarily from ba
 
 There are currently 80 instructions in the instruction set, but there is space for 256 total instructions. 
 
+I haven't actually built a real Edputer yet. All of my program development was done using the emulator I made. However, I have already ordered and received the PCBs, but I still need to order most of the components and solder the components on.
+
 ## Components
 
 - [Hardware](Hardware/) - Schematics for the computer board and VGA card
@@ -14,3 +16,13 @@ There are currently 80 instructions in the instruction set, but there is space f
 - [Emulator](Emulator/) - An emulator written in C++ using the SDL library to simulate Edputer on a Windows machine. I have also been experimenting recently on a new Emulator written in x86 ASM and C to run on bare metal
 - [Instruction Set](Instruction%20Set/) - Description of the computer's set of instructions, and an explanation of the instruction set itself
 - [Programs](Programs/) - A collection of some programs I've written for Edputer
+
+## Screenshots
+
+A screenshot from my Space Invaders clone
+
+![Space Invaders](Programs/Space%20Invaders/Space%20Invaders.PNG?raw=true "Space invaders")
+
+A screenshot from my unfinished Pacman clone
+
+![Pacman](Programs/Pacman/Pacman.PNG?raw=true "Pacman")
