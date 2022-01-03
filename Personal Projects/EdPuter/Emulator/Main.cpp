@@ -729,7 +729,7 @@ int main(int argc, char* argv[])
 				B = RAM[PROM[addr] & 255];
 				break;
 			case 31: //LDCCMA
-				B = PROM[PROM[addr] & 255];
+				C = PROM[A];
 				break;
 			case 32: //LDCI
 				C = (PROM[addr] & 255);
