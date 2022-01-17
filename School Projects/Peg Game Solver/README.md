@@ -12,26 +12,26 @@ The following image shows the numeric labels I chose for the board.
 
 These images show the output from running the program. They detail the amount of solutions that exist for any given starting hole, show the moves needed to do the worst possible, and show an example solution.
 
-![Results](Results.png?raw=true "results")
+![Results](Results.PNG?raw=true "results")
 
-![Results](Results2.png?raw=true "results")
+![Results](Results2.PNG?raw=true "results")
 
 This shows the amount of solutions pertaining to each starting hole. Based on this, the next time you try playing this at Cracker Barrel, you should start with one of the middle side holes. You'll have a better chance of winning!
 
-![Solutions count](pegsolscount.png?raw=true "Solutions Count")
+![Solutions count](pegsolcount.png?raw=true "Solutions Count")
 
 ## Examples
 
 Here are some example solutions found using this program.
 
-Solution Example 1
+### Solution Example 1
 
 ![Solution 1](Example1.gif?raw=true "Example 1")
 
-Solution Example 2
+### Solution Example 2
 
 ![Solution 2](Example2.gif?raw=true "Example 2")
 
-Worst Possible Game Example
+### Worst Possible Game Example
 
 ![Worst Possible Example](Fail.gif?raw=true "Worst Possible Example")
