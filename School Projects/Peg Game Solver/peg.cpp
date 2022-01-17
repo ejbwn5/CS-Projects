@@ -89,9 +89,9 @@ void peg(bool* pegs, vector<mov> moves)
         if (count(pegs)==1) //did we win?
         {
           totalGames++; 
-					totalSolutions++;
+          totalSolutions++;
           solutions[pegN].push_back(moves); //add list of moves to the list of solutions
-					
+          
           moves.pop_back(); //backtrack to find more solutions, undo previous move
           pegs[p]=1; 
           pegs[choice]=0;
@@ -134,7 +134,7 @@ void peg(bool* pegs, vector<mov> moves)
 }
 
 int main()
-{	
+{ 
   bool pegs[15]; //the 15 pegs to use
   for (int i=0; i<15; i++) //try starting with each hole as the initial empty hole
   {
@@ -145,9 +145,9 @@ int main()
     pegN=i; //starting hole
     peg(pegs, m); //find solutions    
   }
-	
-	//Print stats
-	
+  
+  //Print stats
+  
   cout << "Number of solutions:" << endl;
   for (int i=0; i<15;i++)
   {    
@@ -156,51 +156,51 @@ int main()
   cout << endl; 
   
   cout << "Total possible finished games: " << totalGames << endl << endl;
-	cout << "Total possible won games: " << totalSolutions << endl << endl;
+  cout << "Total possible won games: " << totalSolutions << endl << endl;
   cout << "Worst Score Possible: ";
   cout << worstGame << " pegs left" << endl << endl;
   
-	//Show how to get the worst score possible
-	cout << "Worst games:" << endl << endl; 
-	
+  //Show how to get the worst score possible
+  cout << "Worst games:" << endl << endl; 
+  
   for (int i=0; i<15;i++)
   {    
-		if (worstGames[i].size()>0)
-		{
-			cout << "Starting hole: " << i << endl << endl;			
-			
-			for (int game = 0; game < worstGames[i].size(); game++)
-			{
-				cout << "Game " << (game+1) << ":" << endl;
-				for (auto h : worstGames[i][game])
-				{
-					cout << h.start << ":" << h.finish << endl;
-				}
-				cout << endl;      
-			}
-		}
+    if (worstGames[i].size()>0)
+    {
+      cout << "Starting hole: " << i << endl << endl;     
+      
+      for (int game = 0; game < worstGames[i].size(); game++)
+      {
+        cout << "Game " << (game+1) << ":" << endl;
+        for (auto h : worstGames[i][game])
+        {
+          cout << h.start << ":" << h.finish << endl;
+        }
+        cout << endl;      
+      }
+    }
   }
   cout << endl; 
   
   //Print random solutions to the game as long as user keeps entering text input
-	
-  srand(time(0)); //seed random number generator	
-	
-	cout << "Solutions:" << endl << endl; 
-	
+  
+  srand(time(0)); //seed random number generator  
+  
+  cout << "Solutions:" << endl << endl; 
+  
   cout << "Type anything to print out random solutions" << endl;
-	cout << "Type 'q' to quit" << endl;
-	string q;
+  cout << "Type 'q' to quit" << endl;
+  string q;
   while (true)
-  {		
+  {   
     cin >> q;   
-		
+    
     int l= rand() % 15; //get random starting peg
     int c = rand() % solutions[l].size(); //get random solution index
-		
-		if (q=="q") break; //quit if user typed 'q'
-		
-		cout << endl << "Solution #" << c << ", starting with hole #" << l << " empty"<< endl;  
+    
+    if (q=="q") break; //quit if user typed 'q'
+    
+    cout << endl << "Solution #" << c << ", starting with hole #" << l << " empty"<< endl;  
   
     for (auto m : solutions[l][c])
     {
