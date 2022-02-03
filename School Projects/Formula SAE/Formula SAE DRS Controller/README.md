@@ -4,4 +4,7 @@ This is the DRS (Drag Reduction System) controller I wrote for Missouri S&T's Fo
 
 The DRS button was wired directly to the microcontroller, and I implemented simple debouncing logic for the controller to prevent stuttering with the button input. Button bouncing could cause a few problems with the car. A flickering input could potentially damage the servos or cause the wing to go outside the intended angular range it was designed for, which could damage it. Also, without debouncing, any unintended noise could accidentally trigger the DRS without the driver actually pushing the button. Debouncing reduces the odds of these problems occurring.
 
-A short video of the DRS being tested can be found [here](DRS%20Shakedown.mp4).
+A short video of the DRS being tested:
+
+https://user-images.githubusercontent.com/95320219/152304820-931593fc-f484-462e-9ead-24835d5842f3.mp4
+
