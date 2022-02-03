@@ -2,6 +2,8 @@
 
 This is my automatic Wordle solver. I use Python's Pyppeteer and Asyncio libraries to automatically control an instance of Google Chrome to play Wordle.
 
+https://user-images.githubusercontent.com/95320219/152296932-f5725868-ae0b-4899-8686-b72ee584f722.mp4
+
 ## Strategy
 
 I've refined my strategy multiple times, and now have a win rate of about 98%. However, it now usually takes me longer to reach the solution. I decided that it's better to take longer to win if it means increasing my overall win rate.
