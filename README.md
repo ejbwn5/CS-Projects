@@ -3,7 +3,7 @@
 This is a collection of some programming projects I have done. They're split into projects I did for/at school and projects that I did on my own accord.
 
 Some of my most notable projects:
-- [Edputer](Personal%20Projects/Edputer/)
+- [Edputer](Personal%20Projects/EdPuter/)
   - 16-bit computer I designed, along with the Emulator, Assembler and C-like programming language compiler created for it
 - [My Wordle Solver](Personal%20Projects/Wordle%20Solver/)
   - Wordle is a word guessing game that's become pretty popular lately. This is the program I wrote that automatically plays them on [wordle.berknation.com](https://wordle.berknation.com/)
