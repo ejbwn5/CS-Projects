@@ -10,6 +10,6 @@ Some of my most notable projects:
 - [Formula SAE Wireless Lap Timer](School%20Projects/Formula%20SAE/Formula%20SAE%20Wireless%20Lap%20Timer/)
   - This is the lap timer that I designed for Missouri S&T's Formula SAE racing team during the Spring 2021 semester. 
 - [My Chess AI](School%20Projects/Chess%20AI/)
-  - This is the Chess AI that I wrote for my Artificial Intelligence class during the Spring 2021 semester
+  - This is the Chess AI that I wrote for my Artificial Intelligence class during the Spring 2020 semester
   
   
