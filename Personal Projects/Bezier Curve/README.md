@@ -13,7 +13,7 @@ This is an example of a quartic bezier curve, drawn using 5 control points.
 This is an example showing how composite cubic bezier curves are often used. This is an approximation of the curve representing the famous Circuit de Spa-Francorchamps racetrack.
 
 With control points:
-![Example](Composite1.png?raw=true "Example")
+![Example](Composite1.PNG?raw=true "Example")
 
 Without control points:
-![Example](Composite2.png?raw=true "Example")
+![Example](Composite2.PNG?raw=true "Example")
