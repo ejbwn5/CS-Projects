@@ -4,11 +4,20 @@ from matplotlib.backend_bases import MouseButton
 
 bezierControls = [] #initially no control points
 
+showPoints = True #whether or not to show points
+
+connectedEndpoints = False
+
 curveResolution = 100 # amount of line segments to make the curve out of
 
 def drawPoints():
   global bezierControls
   global plt
+  global showPoints
+  
+  if not showPoints:
+    return None
+    
   x = [val[0] for val in bezierControls]
   y = [val[1] for val in bezierControls]
   plt.scatter(x, y, color="red") 
@@ -20,7 +29,6 @@ def lerp(start, end, amt):
 
 def bezier(bezierControls, divisions):
   global plt
-  global debug
   if len(bezierControls) < 2: #need at least 2 control points    
     return []
   timeStepResolution = 1/divisions
@@ -44,7 +52,11 @@ def bezier(bezierControls, divisions):
 def drawCurve():
   global bezierControls
   global plt
-  points = bezier(bezierControls, divisions=curveResolution) 
+  global connectedEndpoints
+  if connectedEndpoints and len(bezierControls) > 1:
+    points = bezier(bezierControls+[bezierControls[0]], divisions=curveResolution) 
+  else:
+    points = bezier(bezierControls, divisions=curveResolution) 
   x = [val[0] for val in points]
   y = [val[1] for val in points]    
   plt.plot(x, y, color="blue")
@@ -67,6 +79,10 @@ def on_move(event):
   global selectedPoint
   global mousePos
   global mouseDown
+  
+  if not showPoints:
+    return None
+  
   if event.inaxes:
     # get the x and y pixel coords
     x, y = event.x, event.y
@@ -90,8 +106,14 @@ def on_click(event):
   global bezierControls
   global mouseDown
   global mousePos
+  global showPoints
+  
+  if not showPoints: #don't let user add or move points when theyre invisible because that's just weird
+    return None
   
   mousePos = [event.xdata, event.ydata] #update mouse position variable
+  if mousePos[0] == None or mousePos[1] == None:   
+    return None
   
   if event.button is MouseButton.LEFT:            
     minDist = None #initialize minimums to None
@@ -111,7 +133,7 @@ def on_click(event):
     if minDist < 4:
       selectedPoint = minPointInd
       mouseDown = True            
-  elif event.button is MouseButton.RIGHT: #add new point
+  elif event.button is MouseButton.RIGHT: #add new point     
     bezierControls += [mousePos]
     selectedPoint = len(bezierControls) - 1
     mouseDown = True
@@ -123,10 +145,24 @@ def on_clickRelease(event):
     mouseDown = False
 
 def on_keypress(event):    
-  global bezierControls  
-  if event.key == 'delete' or event.key == 'backspace':
+  global bezierControls
+  global connectedEndpoints  
+  global selectedPoint
+  global showPoints
+  if event.key == 'backspace':
     bezierControls = []
     drawStuff() #redraw screen
+  elif event.key == 'delete':
+    if selectedPoint != None:
+      bezierControls = bezierControls[:selectedPoint] + bezierControls[selectedPoint+1:] #remove the last selected point
+      selectedPoint = None
+      drawStuff()
+  elif event.key == ' ': #toggle the point visibility
+    showPoints = not showPoints
+    drawStuff()
+  elif event.key == 'c': #toggle endpoint connection
+    connectedEndpoints = not connectedEndpoints
+    drawStuff()
 
 #set up mouse event handlers
 binding_id = plt.connect('motion_notify_event', on_move)
